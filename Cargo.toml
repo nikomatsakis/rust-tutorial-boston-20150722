@@ -1,0 +1,4 @@
+[package]
+name = "nmatsakis-examples"
+version = "0.0.1"
+authors = ["Nicholas D. Matsakis <nmatsakis@mozilla.com>"]
