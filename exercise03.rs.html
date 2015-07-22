@@ -188,9 +188,8 @@ span.preprocessor a { color: #b0c4de;  font-family: default;  font-stretch: norm
 <span class="preprocessor">#[test]</span>
 <span class="keyword">fn</span> <span class="function-name">unit_test1</span>() {
     <span class="keyword">let</span> c1 = <span class="type">Shape::</span>circle(0.0, 0.0, 1.0);
-    <span class="keyword">let</span> c2 = <span class="type">Shape::</span>rect(<span class="type">Point::</span>new(-1.0, 1.0),
-                         <span class="type">Point::</span>new(1.0, -1.0));
-    <span class="preprocessor">assert_eq!</span>(c1.bounding_rectangle(), c2);
+    <span class="keyword">let</span> br = (<span class="type">Point::</span>new(-1.0, 1.0), <span class="type">Point::</span>new(1.0, -1.0));
+    <span class="preprocessor">assert_eq!</span>(c1.bounding_rectangle(), br);
 }
 </pre>
 
