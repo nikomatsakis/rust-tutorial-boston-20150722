@@ -59,7 +59,6 @@ fn bound_all(shapes: &[Shape]) -> (Point, Point) {
 #[test]
 fn unit_test1() {
     let c1 = Shape::circle(0.0, 0.0, 1.0);
-    let c2 = Shape::rect(Point::new(-1.0, 1.0),
-                         Point::new(1.0, -1.0));
-    assert_eq!(c1.bounding_rectangle(), c2);
+    let br = (Point::new(-1.0, 1.0), Point::new(1.0, -1.0));
+    assert_eq!(c1.bounding_rectangle(), br);
 }
