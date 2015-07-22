@@ -1,10 +1,10 @@
-#[derive(Copy, Clone, Debug, PartialEq, Eq)]
+#[derive(Copy, Clone, Debug, PartialEq)]
 struct Point {
     x: f32,
     y: f32
 }
 
-#[derive(Copy, Clone, Debug, PartialEq, Eq)]
+#[derive(Copy, Clone, Debug, PartialEq)]
 enum Shape {
     Circle { origin: Point, radius: f32 },
     Rectangle { ul: Point, lr: Point },
