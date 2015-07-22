@@ -127,13 +127,13 @@ span.preprocessor a { color: #b0c4de;  font-family: default;  font-stretch: norm
   </head>
   <body onload="stripe('index'); return true;">
 
-<pre><span class="preprocessor">#[derive(Copy, Clone, Debug, PartialEq, Eq)]</span>
+<pre><span class="preprocessor">#[derive(Copy, Clone, Debug, PartialEq)]</span>
 <span class="keyword">struct</span> <span class="type">Point</span> {
     <span class="variable-name">x</span>: <span class="type">f32</span>,
     <span class="variable-name">y</span>: <span class="type">f32</span>
 }
 
-<span class="preprocessor">#[derive(Copy, Clone, Debug,</span><span class="preprocessor"> </span><span class="preprocessor">PartialEq, Eq)]</span>
+<span class="preprocessor">#[derive(Copy, Clone, Debug,</span><span class="preprocessor"> </span><span class="preprocessor">PartialEq)]</span>
 <span class="keyword">enum</span> <span class="type">Shape</span> {
     <span class="type">Circle</span> { <span class="variable-name">origin</span>: <span class="type">Point</span>, <span class="variable-name">radius</span>: <span class="type">f32</span> },
     <span class="type">Rectangle</span> { <span class="variable-name">ul</span>: <span class="type">Point</span>, <span class="variable-name">lr</span>: <span class="type">Point</span> },
