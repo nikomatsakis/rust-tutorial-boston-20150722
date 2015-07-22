@@ -24,7 +24,7 @@ impl Shape {
     }
 
     fn circle(x: f32, y: f32, radius: f32) -> Shape {
-        Shape::Circle { origin: Point { x: x, y: y }, radius: r }
+        Shape::Circle { origin: Point { x: x, y: y }, radius: radius }
     }
 
     fn rect(ul: Point, lr: Point) -> Shape {
